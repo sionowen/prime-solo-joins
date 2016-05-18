@@ -15,7 +15,6 @@ SELECT warehouse, description FROM warehouse_product
 	JOIN products ON warehouse_product.product_id = products.id
 	WHERE description = 'diet pepsi'
 --Get the number of orders for each customer. NOTE: It is OK if those without orders are not --included in results.
-SELECT * FROM addresses
 SELECT customers.first_name, COUNT(first_name)
 FROM customers
 JOIN addresses
